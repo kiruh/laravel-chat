@@ -22,4 +22,5 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/contacts', 'ContactController@get');
+Route::post('/conversation/send', 'ContactController@send');
 Route::get('/conversation/{id}', 'ContactController@getMessagesFor');
